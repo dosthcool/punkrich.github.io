@@ -249,7 +249,8 @@ h3{
 }
 h4{
 	font-size: 20px;
-	/*margin-top: 20px;*/
+	color:#FFFFFF;
+	opacity: 0.6;
 }
 h5{
 	font-size: 18px;
