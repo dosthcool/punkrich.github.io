@@ -12,21 +12,20 @@
   <!-- test -->
 <script> 
 $(document).ready(function(){
-  $("button").mousemove(function(){
-    $(".circle").animate({bottom:'250px'});
-    $(".circle2").animate({left:'250px'});
+  $("button").mouseenter(function(){
+    $(".circle").animate({bottom:'50px'});
+    $(".circle2").animate({left:'50px'});
+    $(".logo2").show();
+    $(".logo").hide();
+  });
+  $("button").mouseleave(function(){
+    $(".circle").animate({top:'50px'});
+    $(".circle2").animate({left:'50px'});
+    $(".logo2").hide();
+    $(".logo").show();
   });
 });
 </script> 
-
-<!-- <script> 
-$(document).ready(function(){
-  $("button").click(function(){
-    $(".circle").animate({bottom:'250px'});
-    $(".circle2").animate({left:'250px'});
-  });
-});
-</script> --> 
 
 </head>
 <body style="background-color: #111111">
@@ -45,7 +44,8 @@ $(document).ready(function(){
 		</div>
 		<div class="rows col-md-12 col-xs-12">
 			<h4 style="text-align: center;">WORK PRESENTATION</h4><br>
-			<img src="https://pic.downk.cc/item/5f4dc369160a154a67744f17.png" class="img-responsive" style="margin-top: 24px;">
+			<div class="logo"><img src="https://pic.downk.cc/item/5f4dc369160a154a67744f17.png" class="img-responsive" style="margin-top: 24px;"></div>
+			<div class="logo2"><img src="https://pic.downk.cc/item/5f4dee62160a154a677e9069.gif" class="img-responsive" style="margin-top: 24px;"></div>
 		</div>
 		<div class="rows col-md-12 col-xs-12" style="text-align: center;margin-top: 40px">
 			<p style="margin-bottom: 40px">

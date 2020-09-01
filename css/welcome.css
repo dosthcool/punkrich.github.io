@@ -8,7 +8,7 @@ button{
 	background-color: #FFFFFF;
 	color:#111111;
 	font-weight: 500;
-	font-size: 26px;
+	font-size: 20px;
 	padding: 12px 24px;
 	border-radius: 48px;
 	border-width: 0px;
@@ -27,6 +27,9 @@ button a{
 	vertical-align: right;
 	bottom: 0px;
 	right: -20px;
+}
+.logo2{
+	display: none;
 }
 #menu{
 	position:fixed;
@@ -254,7 +257,6 @@ h4{
 }
 h5{
 	font-size: 18px;
-	/*color: #aaa;*/
 	font-weight: 200px;
 	
 }
