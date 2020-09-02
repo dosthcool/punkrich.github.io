@@ -10,43 +10,30 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
   <title>PunkRich - Studio</title>
   <!-- test -->
-<script> 
+
+<!-- 鼠标放在按钮上的效果 -->
+
+<script type="text/javascript"> 
 $(document).ready(function(){
-  $("button").mouseenter(function(){
+  $("input").mouseenter(function(){
     $(".circle").animate({bottom:'50px'});
     $(".circle2").animate({left:'50px'});
     $(".logo2").show();
     $(".logo").hide();
   });
-  $("button").mouseleave(function(){
+  $("input").mouseleave(function(){
     $(".circle").animate({top:'50px'});
     $(".circle2").animate({left:'50px'});
     $(".logo2").hide();
     $(".logo").show();
   });
-  // $("button").click(function(){
-  //   $(function Click(){ 
-  //   	window.location.hash = "#contact";
-  //   });
-  // });
 });
 </script> 
 
-<!-- <script>
-    $(function () {
-        //获取模块到顶部的距离 
-        var contact = $('#contact').offset().top;
-        $('#contact_us').click(function () {
-            $('html,body').animate({scrollTop:contact},1000);
-        })
-    })
-</script> -->
-
-
-
 </head>
-<body style="background-color: #111111">
 
+<body style="background-color: #111111">
+<!-- 滚动效果 -->
 <script type="text/javascript"> 
 function click_scroll() { 
 var scroll_offset = $("#contact").offset(); //得到pos这个div层的offset，包含两个值，top和left 
@@ -56,6 +43,38 @@ scrollTop:scroll_offset.top //让body的scrollTop等于pos的top，就实现了�
 } 
 </script> 
 
+<!-- circle滚动消失效果 -->
+
+<script type="text/javascript">
+	$(function () {            
+            //绑定滚动条事件
+              //绑定滚动条事件
+            $(window).bind("scroll", function () {
+                var sTop = $(window).scrollTop();
+                var sTop = parseInt(sTop);
+                var a = $("#work").offset().top;
+                var a = parseInt(a);
+                if (sTop + 400 <= a) {
+                    if (!$(".circle").is(":visible")) {
+                        try {
+                            $(".circle").slideDown();
+                        } catch (e) {
+                            $(".circle").show();
+                        }                      
+                    }
+                }
+                else {
+                    if ($(".circle").is(":visible")) {
+                        try {
+                            $(".circle").slideUp();
+                        } catch (e) {
+                            $(".circle").hide();
+                        }                       
+                    }
+                } 
+            });
+        })
+</script>
 	
 	<!-- intro -->
 	
@@ -63,10 +82,12 @@ scrollTop:scroll_offset.top //让body的scrollTop等于pos的top，就实现了�
 	<div class="container">
 		<div class="row col-xs-4 col-md-6">
 			<div class="circle">
-				<img src="https://pic.downk.cc/item/5f4dc369160a154a67744f10.png" style="vertical-align: left;width: 100%;">
-			</div>
-			<div class="circle2">
-				<img src="https://pic.downk.cc/item/5f4dc369160a154a67744f14.png" style="width: 100%;">
+				<div class="circle1">
+					<img src="https://pic.downk.cc/item/5f4dc369160a154a67744f10.png" style="vertical-align: left;width: 100%;">
+				</div>
+				<div class="circle2">
+					<img src="https://pic.downk.cc/item/5f4dc369160a154a67744f14.png" style="width: 100%;">
+				</div>
 			</div>
 		</div>
 		<div class="rows col-md-12 col-xs-12">
@@ -86,7 +107,7 @@ scrollTop:scroll_offset.top //让body的scrollTop等于pos的top，就实现了�
 
 		</div>
 		
-		<div class="rows col-md-12 col-xs-12" style="text-align: center;margin-top: 100px" id="work">
+		<div class="work rows col-md-12 col-xs-12" style="text-align: center;margin-top: 200px" id="work">
 			<img src="work/1.png" width="100%">
 		</div>
 		<div class="rows col-md-12 col-xs-12" style="text-align: center;margin-top: 48px">
