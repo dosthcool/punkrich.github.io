@@ -18,6 +18,27 @@ button a{
 	text-decoration:none;
 }
 
+button{
+	background-color: #111;
+	border-radius: 24px;
+	color: #fff;
+	padding: 8px 20px;
+	border: #FFFFFF solid 1px;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+button:hover{
+	background-color: #fff;
+	border-radius: 24px;
+	color: #111111;
+	padding: 8px 20px;
+	border: #FFFFFF solid 0px;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+
 .circle1{
 	position: fixed;
 }
