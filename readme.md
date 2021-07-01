@@ -1,2 +1,2 @@
 nothing
-[Go](https://punkrich.github.io)
+[Go](http://studio.dosth.cool)
