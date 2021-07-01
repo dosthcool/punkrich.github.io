@@ -2,6 +2,7 @@
 .body{
 	color: #FFFFFF;
 	background-color: #111111；
+	font-family: 'Rubik', sans-serif;
 }
 
 input{
@@ -286,7 +287,6 @@ h6{
 	font-size: 14px;
 	/*color: #3C3C3C;*/
 	margin-top: 24px;
-/*	font-family: sans-serif;*/
 	font-weight: 100px;
 }
 
@@ -294,14 +294,11 @@ p{
 	font-size: 16px;
 	line-height: 48px;
 	color: #FFFFFF;
-/*	letter-spacing: 0.5px;*/
-	/*margin: 24px 0px;*/
 }
 small{
 	color: #aaa;
 	margin-left: 4px;
 	font-size: 14px;
-	font-family: sans-serif;
 	line-height: 32px;
 }
 
